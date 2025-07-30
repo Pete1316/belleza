@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BellezaEterna - Cosméticos Premium</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(255,240,245,0.9) 0%, rgba(240,248,255,0.8) 100%);
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .btn-hover:hover {
+            transform: translateY(-2px);
+            transition: all 0.2s ease;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center">
+                    <span class="text-white font-bold text-xl">B</span>
+                </div>
+                <h1 class="text-2xl font-bold text-gray-800">BellezaEterna</h1>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#inicio" class="text-gray-700 hover:text-pink-500 transition-colors">Inicio</a>
+                <a href="#productos" class="text-gray-700 hover:text-pink-500 transition-colors">Productos</a>
+                <a href="#beneficios" class="text-gray-700 hover:text-pink-500 transition-colors">Beneficios</a>
+                <a href="#contacto" class="text-gray-700 hover:text-pink-500 transition-colors">Contacto</a>
+            </nav>
+            <button class="bg-pink-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-pink-600 transition-colors btn-hover">
+                Comprar Ahora
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-gradient py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6 leading-tight">
+                    Belleza que <span class="text-pink-500">Transforma</span>
+                </h2>
+                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                    Descubre nuestra colección premium de cosméticos naturales y tratamientos de belleza que realzan tu belleza auténtica. 
+                    Productos dermatológicamente testeados, veganos y libres de crueldad animal.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <button class="bg-pink-500 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-pink-600 transition-colors btn-hover">
+                        Ver Colección
+                    </button>
+                    <button class="border-2 border-pink-500 text-pink-500 px-8 py-3 rounded-full text-lg font-semibold hover:bg-pink-50 transition-colors btn-hover">
+                        Conocer Más
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <img src="https://imagenes.elpais.com/resizer/v2/UJNED3DFNVH6HGBUV37BF23C7Y.png?auth=bf36f2fa3124974b672d54c06a4cd55416266c110a5b9f5285d4e3c01f584c30&width=1960" alt="Productos de Belleza" class="rounded-lg shadow-2xl">
+                    <div class="absolute -top-4 -right-4 bg-white p-3 rounded-lg shadow-lg">
+                        <div class="text-center">
+                            <span class="text-2xl font-bold text-pink-500">20%</span>
+                            <p class="text-sm text-gray-600">de descuento</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4">Por qué elegirnos</h3>
+                <p class="text-gray-600 max-w-2xl mx-auto">Descubre lo que hace única a nuestra marca de belleza</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-4">Productos Naturales</h4>
+                    <p class="text-gray-600">Formulados con ingredientes naturales y orgánicos que nutren tu piel sin productos químicos dañinos.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-4">Cruelty Free</h4>
+                    <p class="text-gray-600">100% libres de crueldad animal. Amamos a los animales tanto como tú amas tu belleza.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-4">Resultados Rápidos</h4>
+                    <p class="text-gray-600">Nuestros productos están diseñados para mostrar resultados visibles desde la primera aplicación.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="productos" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4">Nuestra Colección Premium</h3>
+                <p class="text-gray-600 max-w-2xl mx-auto">Productos cuidadosamente formulados para realzar tu belleza natural</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg product-card">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=300&q=80" alt="Sérum Facial" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold mb-2">Sérum Facial Iluminador</h4>
+                        <p class="text-gray-600 mb-4 text-sm">Con vitamina C y ácido hialurónico para una piel radiante y hidratada.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-pink-500">$45.99</span>
+                            <button class="bg-pink-500 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-600 transition-colors">
+                                Añadir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg product-card">
+                    <img src="https://images.unsplash.com/photo-1556228453-efd6c1afddc1?auto=format&fit=crop&w=300&q=80" alt="Crema Hidratante" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold mb-2">Crema Hidratante Diaria</h4>
+                        <p class="text-gray-600 mb-4 text-sm">Fórmula rica que nutre profundamente sin dejar residuos grasos.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-pink-500">$38.50</span>
+                            <button class="bg-pink-500 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-600 transition-colors">
+                                Añadir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg product-card">
+                    <img src="https://images.unsplash.com/photo-1526948128573-703ee1aeb6fa?auto=format&fit=crop&w=300&q=80" alt="Maquillaje" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold mb-2">Base de Maquillaje</h4>
+                        <p class="text-gray-600 mb-4 text-sm">Cobertura completa con SPF 30 y acabado natural.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-pink-500">$42.00</span>
+                            <button class="bg-pink-500 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-600 transition-colors">
+                                Añadir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg product-card">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=300&q=80" alt="Máscara de Pestañas" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold mb-2">Máscara de Pestañas</h4>
+                        <p class="text-gray-600 mb-4 text-sm">Volumen extremo sin grumos, resistente al agua.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-pink-500">$28.99</span>
+                            <button class="bg-pink-500 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-600 transition-colors">
+                                Añadir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <button class="bg-gray-800 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-900 transition-colors btn-hover">
+                    Ver Todos los Productos
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-pink-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold text-gray-800 mb-4">Lo que dicen nuestras clientas</h3>
+                <p class="text-gray-600">Testimonios reales de mujeres que transformaron su rutina de belleza</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1494790108787-52f159d76050?auto=format&fit=crop&w=60&q=80" alt="María C." class="w-12 h-12 rounded-full object-cover">
+                        <div class="ml-4">
+                            <h4 class="font-semibold">María C.</h4>
+                            <div class="flex text-yellow-400">
+                                ★★★★★
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"El sérum facial ha transformado mi piel en solo 2 semanas. ¡Nunca había visto mi piel tan luminosa!"</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1573496359743-80fab380b7b4?auto=format&fit=crop&w=60&q=80" alt="Ana L." class="w-12 h-12 rounded-full object-cover">
+                        <div class="ml-4">
+                            <h4 class="font-semibold">Ana L.</h4>
+                            <div class="flex text-yellow-400">
+                                ★★★★★
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"La base de maquillaje es increíble. Cubre perfectamente y dura todo el día. Mi favorita sin duda."</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=60&q=80" alt="Sofía R." class="w-12 h-12 rounded-full object-cover">
+                        <div class="ml-4">
+                            <h4 class="font-semibold">Sofía R.</h4>
+                            <div class="flex text-yellow-400">
+                                ★★★★★
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Amo que todos los productos sean veganos y cruelty free. La calidad es excepcional y la piel lo nota."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-r from-pink-500 to-purple-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-4xl font-bold mb-6">¡Transforma tu rutina de belleza hoy!</h3>
+            <p class="text-xl mb-8 opacity-90">Únete a miles de mujeres que ya descubrieron el secreto de una belleza auténtica y duradera.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <button class="bg-white text-pink-600 px-8 py-4 rounded-full text-lg font-bold hover:bg-gray-100 transition-colors btn-hover">
+                    Comprar Ahora
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-pink-600 transition-colors btn-hover">
+                    Suscríbete y Ahorra
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-xl overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-gradient-to-br from-pink-100 to-purple-100 p-8">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Contáctanos</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-500 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold">Email</h4>
+                                    <p class="text-gray-600">hola@bellezaeterna.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-500 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold">Teléfono</h4>
+                                    <p class="text-gray-600">+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-pink-500 mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold">Dirección</h4>
+                                    <p class="text-gray-600">Av. Belleza 123, Ciudad de la Moda, CP 10000</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="font-semibold mb-4">Síguenos en redes</h4>
+                            <div class="flex space-x-4">
+                                <div class="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center text-white font-bold">f</div>
+                                <div class="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center text-white font-bold">t</div>
+                                <div class="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center text-white font-bold">in</div>
+                                <div class="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center text-white font-bold">ig</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <form>
+                            <div class="mb-6">
+                                <label class="block text-gray-700 font-semibold mb-2" for="name">Nombre</label>
+                                <input class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500" type="text" id="name" placeholder="Tu nombre">
+                            </div>
+                            <div class="mb-6">
+                                <label class="block text-gray-700 font-semibold mb-2" for="email">Email</label>
+                                <input class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500" type="email" id="email" placeholder="tu@email.com">
+                            </div>
+                            <div class="mb-6">
+                                <label class="block text-gray-700 font-semibold mb-2" for="message">Mensaje</label>
+                                <textarea class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500" id="message" rows="5" placeholder="Tu mensaje..."></textarea>
+                            </div>
+                            <button class="w-full bg-pink-500 text-white py-3 rounded-lg font-semibold hover:bg-pink-600 transition-colors btn-hover">
+                                Enviar Mensaje
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-pink-500 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold">B</span>
+                        </div>
+                        <h3 class="text-xl font-bold">BellezaEterna</h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">Tu destino de belleza y cuidado personal. Productos premium que aman tu piel.</p>
+                    <div class="flex space-x-4">
+                        <div class="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center text-sm hover:bg-pink-500 transition-colors cursor-pointer">f</div>
+                        <div class="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center text-sm hover:bg-pink-500 transition-colors cursor-pointer">t</div>
+                        <div class="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center text-sm hover:bg-pink-500 transition-colors cursor-pointer">in</div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Productos</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-pink-400 transition-colors">Cuidado Facial</a></li>
+                        <li><a href="#" class="hover:text-pink-400 transition-colors">Maquillaje</a></li>
+                        <li><a href="#" class="hover:text-pink-400 transition-colors">Cuidado Capilar</a></li>
+                        <li><a href="#" class="hover:text-pink-400 transition-colors">Cuerpo y Baño</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Soporte</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-pink-400 transition-colors">Preguntas Frecuentes</a></li>
+                        <li><a href="#" class="hover:text-pink-400 transition-colors">Política de Devoluciones</a></li>
+                        <li><a href="#" class="hover:text-pink-400 transition-colors">Envíos</a></li>
+                        <li><a href="#" class="hover:text-pink-400 transition-colors">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Suscríbete para recibir ofertas exclusivas y novedades.</p>
+                    <div class="flex">
+                        <input class="px-4 py-2 w-full rounded-l-lg focus:outline-none text-gray-800" type="email" placeholder="Tu email">
+                        <button class="bg-pink-500 text-white px-4 py-2 rounded-r-lg hover:bg-pink-600 transition-colors">
+                            →
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 BellezaEterna. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
